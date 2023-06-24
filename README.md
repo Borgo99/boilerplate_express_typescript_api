@@ -26,7 +26,17 @@ Install Mongo dependencies
 npm run install:mongo
 ```
 
-It will install also a security library for Mongo. Uncomment it in app.ts.
+Uncomment the lines in the file utils/connectToMongo.ts and the line follow line in server.ts.
+
+```js
+await connectToMongo();
+```
+
+It will install also a security library for Mongo. Uncomment the following line in app.ts.
+
+```js
+app.use(mongoSanitize());
+```
 
 ## Add Security Packages
 
