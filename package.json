@@ -1,0 +1,26 @@
+{
+  "name": "boilerplate_express_typescript_api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/server.ts",
+  "scripts": {
+    "install:mongo": "npm i mongoose @typegoose/typegoose express-mongo-sanitize",
+    "install:auth": "npm i jsonwebtoken bcryptjs cookie-parser",
+    "install:security-packages": "npm i helmet xss-clean hpp express-rate-limit",
+    "dev": "tsc -w & nodemon dist/server.js",
+    "build": "tsc --project tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "author": "borgo99",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/node": "^20.3.1",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.3.1"
+  }
+}
