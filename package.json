@@ -7,6 +7,7 @@
     "install:mongo": "npm i mongoose @typegoose/typegoose express-mongo-sanitize",
     "install:auth": "npm i jsonwebtoken bcryptjs cookie-parser",
     "install:security-packages": "npm i helmet xss-clean hpp express-rate-limit",
+    "install:jest": "npm i jest ts-jest @types/jest --save-dev",
     "dev": "tsc -w & nodemon dist/server.js",
     "build": "tsc --project tsconfig.json",
     "start": "node dist/server.js"
