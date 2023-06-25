@@ -33,7 +33,7 @@ await connectToMongo();
 ```
 
 Add your database url and password in config.env.
-Remember to just change "YourUsername" and to leave <PASSWORD> as below, it will be replaced with DATABASE_PASSWORD on runtime.
+Remember to just change "YourUsername" and to leave `<PASSWORD>` as below, it will be replaced with DATABASE_PASSWORD on runtime.
 
 ```env
 DATABASE=mongodb+srv://YourUsername:<PASSWORD>@.......
