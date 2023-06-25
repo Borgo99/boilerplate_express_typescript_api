@@ -1,5 +1,6 @@
 import express from "express";
+import { GET_MSG } from "../api/GET_MSG";
 
 export const apiRouter = express.Router();
 
-apiRouter.get("/", (req, res) => res.send("Hello from API!"));
+apiRouter.get("/", GET_MSG);

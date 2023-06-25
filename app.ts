@@ -1,6 +1,7 @@
 import express from "express";
 import compression from "compression";
 import errorMiddleware from "./middlewares/errorMiddleware";
+import { apiRouter } from "./routes/apiRoutes";
 
 // import cookieParser from 'cookie-parser';
 // import rateLimit from 'express-rate-limit';
@@ -27,7 +28,7 @@ app.use(compression());
 app.use(express.static("public"));
 
 // ROUTES
-app.use("/api");
+app.use("/api", apiRouter);
 
 app.use(errorMiddleware);
 

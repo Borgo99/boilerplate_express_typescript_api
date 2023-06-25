@@ -1,4 +1,4 @@
-# Boilerplate for Express-Typescript Project
+# Boilerplate for Express-Typescript API Project
 
 To test it run
 
