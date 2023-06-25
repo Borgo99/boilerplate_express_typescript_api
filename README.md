@@ -32,6 +32,14 @@ Uncomment the lines in the file utils/connectToMongo.ts and the line follow line
 await connectToMongo();
 ```
 
+Add your database url and password in config.env.
+Remember to just change "YourUsername" and to leave "<PASSWORD>" as below, it will be replaced with DATABASE_PASSWORD on runtime.
+
+```env
+DATABASE=mongodb+srv://YourUsername:<PASSWORD>@.......
+DATABASE_PASSWORD=your_db_pwd
+```
+
 It will install also a security library for Mongo. Uncomment the following line in app.ts.
 
 ```js
